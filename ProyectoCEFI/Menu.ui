@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Toplevel" id="toplevel1">
+    <property name="background">#ffffff</property>
+    <property name="height">200</property>
+    <property name="width">200</property>
+    <child>
+      <object class="ttk.Frame" id="frame1">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="pack">
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="labelmenu" named="True">
+            <property name="font">{Gill Sans Ultra Bold} 12 {}</property>
+            <property name="text" translatable="yes">Menú
+</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="labelbanner" named="True">
+            <property name="borderwidth">5</property>
+            <property name="compound">center</property>
+            <property name="image">banner.PNG</property>
+            <property name="width">100</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="buttonuser" named="True">
+            <property name="command" type="command" cbtype="simple">function_user</property>
+            <property name="text" translatable="yes">User</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">4</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="buttonphysiotherapist" named="True">
+            <property name="command" type="command" cbtype="simple">function_physiotherapist</property>
+            <property name="text" translatable="yes">Fisioterapueta</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="buttonconsultation" named="True">
+            <property name="command" type="command" cbtype="simple">function_consultation</property>
+            <property name="text" translatable="yes">Consultation</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="buttondiagnosis" named="True">
+            <property name="command" type="command" cbtype="simple">function_diagnosis</property>
+            <property name="text" translatable="yes">Diagnosis</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="buttontreatment" named="True">
+            <property name="command" type="command" cbtype="simple">function_treatment</property>
+            <property name="text" translatable="yes">Tratamiento</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="buttonreportpatient" named="True">
+            <property name="command" type="command" cbtype="simple">function_reportpatients</property>
+            <property name="text" translatable="yes">Reporte pacientes
+</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="buttonreportconsultation" named="True">
+            <property name="command" type="command" cbtype="simple">function_reportconsultation</property>
+            <property name="text" translatable="yes">Reporte consultas</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="row">4</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="buttonstatisticalreport" named="True">
+            <property name="command" type="command" cbtype="simple">function_reportstatistical</property>
+            <property name="text" translatable="yes">Reporte estadístico</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="buttonpatient" named="True">
+            <property name="command" type="command" cbtype="simple">function_patients</property>
+            <property name="text" translatable="yes">Paciente</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">4</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="buttoninvoice" named="True">
+            <property name="command" type="command" cbtype="simple">function_showinvoice</property>
+            <property name="text" translatable="yes">Facturación</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">5</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

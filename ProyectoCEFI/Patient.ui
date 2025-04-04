@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Toplevel" id="toplevel1">
+    <property name="height">200</property>
+    <property name="width">200</property>
+    <child>
+      <object class="ttk.Frame" id="frame1">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="pack">
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="labelpaciente" named="True">
+            <property name="text" translatable="yes">Paciente</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="labelname" named="True">
+            <property name="text" translatable="yes">Nombre:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entryname" named="True">
+            <property name="textvariable">string:textVar_Name</property>
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="labellastname" named="True">
+            <property name="text" translatable="yes">Apellido:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entrylastname" named="True">
+            <property name="textvariable">string:textVar_Lastname</property>
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="labelaadress" named="True">
+            <property name="text" translatable="yes">Dirección:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">4</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entryadress" named="True">
+            <property name="textvariable">string:textVar_Adress</property>
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="row">4</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="labeldatbirth" named="True">
+            <property name="text" translatable="yes">Fecha de nacimiento:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">5</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="labelphonenumber" named="True">
+            <property name="text" translatable="yes">Teléfono:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">6</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entryphonenumber" named="True">
+            <property name="textvariable">string:textVar_Phonenumber</property>
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="row">6</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="labelemail" named="True">
+            <property name="text" translatable="yes">Email:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">7</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entryemail" named="True">
+            <property name="textvariable">string:textVar_Email</property>
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="row">7</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="buttoninclude" named="True">
+            <property name="command" type="command" cbtype="simple">funtion_include</property>
+            <property name="text" translatable="yes">Guardar</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">8</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="buttonupdate" named="True">
+            <property name="command" type="command" cbtype="simple">function_modify</property>
+            <property name="text" translatable="yes">Modificar</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="row">8</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="buttondelete" named="True">
+            <property name="command" type="command" cbtype="simple">function_delete</property>
+            <property name="text" translatable="yes">Eliminar</property>
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="row">8</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="buttonsearch" named="True">
+            <property name="command" type="command" cbtype="simple">function_search</property>
+            <property name="text" translatable="yes">Buscar</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">9</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="buttonclean" named="True">
+            <property name="command" type="command" cbtype="simple">function_clean</property>
+            <property name="text" translatable="yes">Limpiar</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="row">9</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="labelid" named="True">
+            <property name="text" translatable="yes">ID</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entryid" named="True">
+            <property name="textvariable">string:textVar_ID</property>
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tkcalendar.DateEntry" id="entrybirthdate" named="True">
+            <property name="state">normal</property>
+            <property name="textvariable">string:textVar_Birthdate</property>
+            <property name="width">18</property>
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="row">5</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

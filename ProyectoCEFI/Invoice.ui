@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Toplevel" id="toplevel1">
+    <property name="height">200</property>
+    <property name="width">200</property>
+    <child>
+      <object class="ttk.Frame" id="frame1">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="pack">
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="labelinvoice" named="True">
+            <property name="text" translatable="yes">                      CEFI
+Centro Fisioterapéutico Infantil</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="labelcity" named="True">
+            <property name="text" translatable="yes">Barquisimeto - Edo Lara</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="labeladress" named="True">
+            <property name="text" translatable="yes">Piso 5, Av. Madrid. Centro empresarial plaza Madrid, ofic 5 2.</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="labelcodeinvoice" named="True">
+            <property name="text" translatable="yes">Documento:</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">4</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entrycodeinvoice" named="True">
+            <property name="state">disabled</property>
+            <property name="textvariable">string:textVar_Codeinvoice</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">4</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="labelclient" named="True">
+            <property name="text" translatable="yes">Cliente:</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">5</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entryidclient" named="True">
+            <property name="textvariable">string:textVar_IDclient</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">5</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="labeldate" named="True">
+            <property name="text" translatable="yes">Date:</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">6</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tkcalendar.DateEntry" id="entrydate" named="True">
+            <property name="width">18</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">6</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="labeltotal" named="True">
+            <property name="text" translatable="yes">Total:</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">8</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entrytotal" named="True">
+            <property name="textvariable">double:textVar_Total</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">8</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="buttoninclude" named="True">
+            <property name="command" type="command" cbtype="simple">function_include</property>
+            <property name="text" translatable="yes">Generar</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">9</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="labelquantity" named="True">
+            <property name="text" translatable="yes">Cantidad de
+consultas: </property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">7</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entryquantity" named="True">
+            <property name="textvariable">string:textVar_Quantity</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">7</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
